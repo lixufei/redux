@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redux counter example</title>
+    <style>
+      body {
+        background: #000;
+      }
+      .demo {
+        width: 200px;
+        margin: 50px auto;
+        padding: 20px;
+        line-height: 2;
+        text-align: center;
+        color: #ec971f;
+        border: 1px solid #4cae4c;
+        border-radius: 4px;
+        background: #fff;
+      }
+      .demo button {
+        padding: 4px 20px;
+        margin: 5px;
+        font-size: 14px;
+        color: #fff;
+        background: #5cb85c;
+        border: 1px solid #4cae4c;
+        border-radius: 2px;
+        outline: 0;
+      }
+      .demo button:hover {
+        background: #5cb85c;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" class="demo">
+      <div>Clicked: <span id='state_container'>0</span> times</div>
+      <button onclick="increase()">+</button>
+      <button onclick="decrease()">-</button>
+    </div>
+
+    <div id="rootb" class="demo">
+      <div>Clicked: <span id='state_containerb'>0</span> times</div>
+      <button onclick="increase()">+</button>
+      <button onclick="decrease()">-</button>
+    </div>
+    <script src="/static/bundle.js"></script>
+  </body>
+</html>
